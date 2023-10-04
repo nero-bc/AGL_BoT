@@ -10,7 +10,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /POST-FILTER-BOT
-WORKDIR /POST-FILTER-BOT
+RUN mkdir /AGL_BoT
+WORKDIR /AGL_BoT
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
